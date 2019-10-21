@@ -28,9 +28,7 @@ int goSSA(){
 
 ## LLVM转换SSA - (1)
 
-首先根据一篇[CSDN博客1](https://blog.csdn.net/qq_29674357/article/details/78731713)根据对LLVM IR进行学习，主要有以下几个坑需要注意
-
-1. LLVM IR为了编译效率，默认采用的 -O0优化，生成的IR会利用**alloca**将栈中的变量转换到内存中，从而这些变量不需要符合SSA的形式（即使代码能转换为完全SSA）
+首先根据一篇[CSDN博客1](https://blog.csdn.net/qq_29674357/article/details/78731713)根据对LLVM IR进行学习，主要有这个坑需要注意：LLVM IR为了编译效率，默认采用的 -O0优化，生成的IR会利用**alloca**将栈中的变量转换到内存中，从而这些变量不需要符合SSA的形式（即使代码能转换为完全SSA）
 
    例如根据命令:
 
