@@ -16,5 +16,5 @@
 
    
 
-   ![](.\result.png)
+   ![SiteReport](https://github.com/Tao-Han/courses/blob/master/Software-Analysis/white_box_test/result.png)
 
